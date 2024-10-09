@@ -1,0 +1,5 @@
+FROM python:3.10-slim
+ENV TOKEN='7581818105:AAF6KU6Fj5Khkcbdpx36Y7UFHj-eTxoWtuc'
+COPY . .
+RUN pip install -r requirements.txt
+ENTRYPOINT [ "python", "Bot.py" ]
